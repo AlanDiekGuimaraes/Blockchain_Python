@@ -5,18 +5,26 @@ from operator import index
 from time import time   # Importa a função time para obter o timestamp (data e hora).
 
 
-# Criando uma SmartContract para validar os dados de exames.
+# Criando um contrato inteligente (SmartContract) para validar dados de exames médicos.
 class SmartContract:
     def __init__(self, blockchain):
+        # Inicializa o contrato inteligente, vinculando-o a uma instância de blockchain.
         self.blockchain = blockchain
     
     def validar_dados_exame(self, dados):
-        # Verifica se os dados são válidos
+        # Função para validar os dados de exame fornecidos.
+                
+        # Verifica se a chave 'glicose' está presente nos dados e se o valor associado é um número (int ou float).
         if 'glicose' not in dados or not isinstance(dados['glicose'], (int, float)):
             return False, "Dados de glicose inválidos ou ausentes."
+        
+        # Verifica se o valor da glicose está dentro do intervalo permitido (70 a 200).
         if dados['glicose'] < 70 or dados['glicose'] > 200:
             return False, "Valor de glicose fora do intervalo permitido (70 a 200)."
+        
+        # Caso os dados atendam a todas as condições, são considerados válidos.
         return True, "Dados válidos."
+
     
         
 class Bloco:
@@ -170,29 +178,36 @@ while True:
         print("Encerrando o programa...")
         break
 
-# Exibir o conteúdo dpo arquivo JSON
+# Função para exibir o conteúdo de um arquivo JSON no console
 def print_json_content(filename):
-    #tenta abrir e processar o arquivo json
     separador = "=" * 100
     try:
+        # Tenta abrir o arquivo JSON no modo leitura
         with open(filename, 'r') as file:
+            # Carrega o conteúdo do arquivo JSON em um objeto Python
             data = json.load(file)
-            #print(json.dumps(data, indent=4))
+            
+            # Itera por cada bloco no JSON carregado
             for bloco in data:
+                # Imprime o separador para melhor organização dos dados
                 print(separador)
+                # Exibe os dados do bloco formatados para facilitar a leitura
                 print(f"       Índice: {bloco['index']}")
                 print(f"    Timestamp: {bloco['timestamp']}")
                 print(f"        Dados: {bloco['dados']}")
                 print(f"Hash Anterior: {bloco['hash_anterior']}")
                 print(f"   Hash Atual: {bloco['hash_atual']}")
                 print(f"        Nonce: {bloco['nonce']}")
-            print(separador)  
-            
-
+            # Imprime um separador no final para fechar a visualização
+            print(separador)
+    
+    # Exceção para o caso do arquivo não ser encontrado
     except FileNotFoundError:
         print(f"Erro: Arquivo {filename} não encontrado")
+    
+    # Exceção para o caso do arquivo não conter um JSON válido
     except json.JSONDecodeError:
-        print(f"Erro: Arquivo {filename} não é um json valido")
+        print(f"Erro: Arquivo {filename} não é um JSON válido")
+
+# Chama a função para exibir o conteúdo do arquivo 'blockchain.json'
 print_json_content('blockchain.json')
-
-
