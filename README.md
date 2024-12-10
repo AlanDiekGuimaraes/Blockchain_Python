@@ -52,14 +52,14 @@ Este projeto implementa uma blockchain em Python para armazenar e validar dados 
 ## 📘 Exemplo de Saída
 No terminal, os dados de cada bloco serão exibidos com separadores visuais, por exemplo:
 
- ====================================================================================================
-        Índice: 1
-     Timestamp: 1733852828.300565
-         Dados: {'glicose': 70.0}
- Hash Anterior: 22843f1829c6cb109068ae05037f2c82dfb09e184004bed18a5359b5b465d4d2
-    Hash Atual: 00903abfa310a33265bb81094742cb4150ca16f8db38d50e9e1b72643aba3f1a
-         Nonce: 324
- ====================================================================================================
+- ====================================================================================================
+-        Índice: 1
+-     Timestamp: 1733852828.300565
+-         Dados: {'glicose': 70.0}
+- Hash Anterior: 22843f1829c6cb109068ae05037f2c82dfb09e184004bed18a5359b5b465d4d2
+-    Hash Atual: 00903abfa310a33265bb81094742cb4150ca16f8db38d50e9e1b72643aba3f1a
+-         Nonce: 324
+- ====================================================================================================
 
 ---
 
