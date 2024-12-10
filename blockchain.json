@@ -1,0 +1,80 @@
+[
+    {
+        "index": 0,
+        "timestamp": 1733852823.2890468,
+        "dados": "Bloco G\u00eanesis",
+        "hash_anterior": "0",
+        "nonce": 0,
+        "hash_atual": "22843f1829c6cb109068ae05037f2c82dfb09e184004bed18a5359b5b465d4d2"
+    },
+    {
+        "index": 1,
+        "timestamp": 1733852828.300565,
+        "dados": {
+            "glicose": 70.0
+        },
+        "hash_anterior": "22843f1829c6cb109068ae05037f2c82dfb09e184004bed18a5359b5b465d4d2",
+        "nonce": 324,
+        "hash_atual": "00903abfa310a33265bb81094742cb4150ca16f8db38d50e9e1b72643aba3f1a"
+    },
+    {
+        "index": 2,
+        "timestamp": 1733854157.71016,
+        "dados": {
+            "glicose": 70.0
+        },
+        "hash_anterior": "00903abfa310a33265bb81094742cb4150ca16f8db38d50e9e1b72643aba3f1a",
+        "nonce": 131,
+        "hash_atual": "0040a3a05d64898cb5f9cf66e940111aaf0719098846f178c410acd06e79ad13"
+    },
+    {
+        "index": 3,
+        "timestamp": 1733854264.624557,
+        "dados": {
+            "glicose": 99.0
+        },
+        "hash_anterior": "0040a3a05d64898cb5f9cf66e940111aaf0719098846f178c410acd06e79ad13",
+        "nonce": 178,
+        "hash_atual": "001e861ebeb83330d4e6eb1e5e66150c763c286696288b71b302280ddcd460d1"
+    },
+    {
+        "index": 4,
+        "timestamp": 1733854338.5910628,
+        "dados": {
+            "glicose": 88.0
+        },
+        "hash_anterior": "001e861ebeb83330d4e6eb1e5e66150c763c286696288b71b302280ddcd460d1",
+        "nonce": 154,
+        "hash_atual": "00ec52659cc27416dd967fb73beefee247a3a410026fb90ee8780d120b70cf0c"
+    },
+    {
+        "index": 5,
+        "timestamp": 1733854368.3532333,
+        "dados": {
+            "glicose": 95.0
+        },
+        "hash_anterior": "00ec52659cc27416dd967fb73beefee247a3a410026fb90ee8780d120b70cf0c",
+        "nonce": 43,
+        "hash_atual": "00e950e610e4b663ac8db8c6b755da6bd04a7ea13d53ebae8934fd63d33ecfd4"
+    },
+    {
+        "index": 6,
+        "timestamp": 1733854505.2415192,
+        "dados": {
+            "glicose": 200.0
+        },
+        "hash_anterior": "00e950e610e4b663ac8db8c6b755da6bd04a7ea13d53ebae8934fd63d33ecfd4",
+        "nonce": 541,
+        "hash_atual": "0096f64927009887ca83062452f471a1d2b8646c06556b78edfb3ee400b30210"
+    },
+    {
+        "index": 7,
+        "timestamp": 1733854593.8352442,
+        "dados": {
+            "glicose": 88.0
+        },
+        "hash_anterior": "0096f64927009887ca83062452f471a1d2b8646c06556b78edfb3ee400b30210",
+        "nonce": 27,
+        "hash_atual": "009e36fb02bdcdf9498cbf6f837c443cec42a41710d3f1557f46e0d5e2073ff8"
+    }
+]
