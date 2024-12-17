@@ -1,4 +1,5 @@
 # Criação do Bloco e Blockchain.
+import os
 import hashlib          # Importa a biblioteca que faz o calculo do hash.
 import json             # Importa o arquivo que manipula arquivos json.
 from operator import index
@@ -56,14 +57,19 @@ class Bloco:
     
 class Blockchain:
     def __init__(self, nome_arquivo='blockchain.json'):
+        # Obtém o diretório onde o script está localizado
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        # Define o caminho absoluto do arquivo JSON
+        self.nome_arquivo = os.path.join(script_dir, 'blockchain.json')
+        
         # Tenta carregar a cadeia de blocos de um arquivo JSON.
-        self.nome_arquivo = nome_arquivo
-        cadeia_carregada = carregar_cadeia_de_json(nome_arquivo)
+        cadeia_carregada = carregar_cadeia_de_json(self.nome_arquivo)
         if cadeia_carregada:
             self.cadeia = cadeia_carregada
         else:
             # Se não houver dados carregados, inicia com o bloco Gênesis e defini a dificuldade da prova de trabalho.
             self.cadeia = [self.criar_bloco_genesis()]              # Lista que armazena os Blocos na cadeia.
+        
         self.dificuldade = 2                                        # Define o numero de zeros necessários no hash da prova de trabalho.                                     
         
     def criar_bloco_genesis(self):
@@ -98,12 +104,12 @@ class Blockchain:
         
         return True                                                         # Retorna verdadeiro se a cadeia for valida.
     
-    def salvar_em_json(self, nome_arquivo='blockchain.json'):
+    def salvar_em_json(self):
         # Salva a cadeia de blocos em um arquivo JSON.
-        with open(nome_arquivo, 'w') as arquivo:
+        with open(self.nome_arquivo, 'w') as arquivo:
             json.dump([bloco.__dict__ for bloco in self.cadeia], arquivo, indent=4)
 
-def carregar_cadeia_de_json(nome_arquivo='blockchain.json'):
+def carregar_cadeia_de_json(nome_arquivo="blockchain.json"):
     try:
         # Tenta abrir e ler os dados do arquivo JSON.
         with open(nome_arquivo, 'r') as arquivo:
@@ -181,11 +187,27 @@ while True:
 # Função para exibir o conteúdo de um arquivo JSON no console
 def print_json_content(filename):
     separador = "=" * 100
+    # Obtém o caminho absoluto do arquivo
+    filepath = os.path.abspath(filename)
+    
+    # Obtém o diretório do script atual
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    filepath = os.path.join(current_dir, filename)  # Cria o caminho completo para o arquivo
+    
+    # Verifica se o arquivo existe antes de tentar abri-lo
+    if not os.path.exists(filepath):
+        print(f"Erro: Arquivo {filepath} não encontrado. Certifique-se de que ele foi criado.")
+        return
+    
     try:
         # Tenta abrir o arquivo JSON no modo leitura
-        with open(filename, 'r') as file:
+        with open(filepath, 'r') as file:
             # Carrega o conteúdo do arquivo JSON em um objeto Python
             data = json.load(file)
+            
+            if not data:
+                print(f"O arquivo {filepath} está vazio ou não contém blocos.")
+                return
             
             # Itera por cada bloco no JSON carregado
             for bloco in data:
@@ -201,13 +223,12 @@ def print_json_content(filename):
             # Imprime um separador no final para fechar a visualização
             print(separador)
     
-    # Exceção para o caso do arquivo não ser encontrado
-    except FileNotFoundError:
-        print(f"Erro: Arquivo {filename} não encontrado")
-    
     # Exceção para o caso do arquivo não conter um JSON válido
     except json.JSONDecodeError:
-        print(f"Erro: Arquivo {filename} não é um JSON válido")
+        print(f"Erro: Arquivo {filepath} não é um JSON válido ou está corrompido.")
+    
+    except Exception as e:
+        print(f"Erro ao processar o arquivo {filepath}: {e}")
 
 # Chama a função para exibir o conteúdo do arquivo 'blockchain.json'
 print_json_content('blockchain.json')

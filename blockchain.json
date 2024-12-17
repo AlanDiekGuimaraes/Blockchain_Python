@@ -76,5 +76,155 @@
         "hash_anterior": "0096f64927009887ca83062452f471a1d2b8646c06556b78edfb3ee400b30210",
         "nonce": 27,
         "hash_atual": "009e36fb02bdcdf9498cbf6f837c443cec42a41710d3f1557f46e0d5e2073ff8"
+    },
+    {
+        "index": 8,
+        "timestamp": 1734399314.4337041,
+        "dados": {
+            "glicose": 75.0
+        },
+        "hash_anterior": "009e36fb02bdcdf9498cbf6f837c443cec42a41710d3f1557f46e0d5e2073ff8",
+        "nonce": 223,
+        "hash_atual": "00c735695d02f3d21bc7d5db75fdfcf6351a6a9382d538fd66ccd80eab51f443"
+    },
+    {
+        "index": 9,
+        "timestamp": 1734399347.4304957,
+        "dados": {
+            "glicose": 88.0
+        },
+        "hash_anterior": "00c735695d02f3d21bc7d5db75fdfcf6351a6a9382d538fd66ccd80eab51f443",
+        "nonce": 628,
+        "hash_atual": "0074826cef00df2e0b64008277b9c4d0a648f2f4bdb828d141697f7b71ea4021"
+    },
+    {
+        "index": 10,
+        "timestamp": 1734399421.0822332,
+        "dados": {
+            "glicose": 200.0
+        },
+        "hash_anterior": "0074826cef00df2e0b64008277b9c4d0a648f2f4bdb828d141697f7b71ea4021",
+        "nonce": 43,
+        "hash_atual": "0058949bdf19431ff847c2bd51105105fcbf9836776a82dda08d1e27d383490f"
+    },
+    {
+        "index": 11,
+        "timestamp": 1734399469.4203885,
+        "dados": {
+            "glicose": 182.0
+        },
+        "hash_anterior": "0058949bdf19431ff847c2bd51105105fcbf9836776a82dda08d1e27d383490f",
+        "nonce": 15,
+        "hash_atual": "003e48e4708c1804f51b3f6557218a04a03ede65ccf2dbfe929c3b4ee028f7d4"
+    },
+    {
+        "index": 12,
+        "timestamp": 1734399726.3311357,
+        "dados": {
+            "glicose": 95.0
+        },
+        "hash_anterior": "003e48e4708c1804f51b3f6557218a04a03ede65ccf2dbfe929c3b4ee028f7d4",
+        "nonce": 368,
+        "hash_atual": "000bb3db3d3ec4049c9652932141f15c2f5ac537200b18200e7fb49bac3c39d8"
+    },
+    {
+        "index": 13,
+        "timestamp": 1734399926.2598789,
+        "dados": {
+            "glicose": 95.0
+        },
+        "hash_anterior": "000bb3db3d3ec4049c9652932141f15c2f5ac537200b18200e7fb49bac3c39d8",
+        "nonce": 1364,
+        "hash_atual": "007b3cb353d4105a0727c0b048c9540028bed64d04ea1c51174401b90f45a950"
+    },
+    {
+        "index": 14,
+        "timestamp": 1734400710.710534,
+        "dados": {
+            "glicose": 88.0
+        },
+        "hash_anterior": "007b3cb353d4105a0727c0b048c9540028bed64d04ea1c51174401b90f45a950",
+        "nonce": 25,
+        "hash_atual": "008cda3d4b38a2e502216702262bd95a119cfdc9ad4f86aa4a0b2af2b40ee922"
+    },
+    {
+        "index": 15,
+        "timestamp": 1734400734.1362998,
+        "dados": {
+            "glicose": 88.0
+        },
+        "hash_anterior": "008cda3d4b38a2e502216702262bd95a119cfdc9ad4f86aa4a0b2af2b40ee922",
+        "nonce": 397,
+        "hash_atual": "000641d5490c295cf13d9e1d91b74273d8c4d54cada956eaa26b381ada00d876"
+    },
+    {
+        "index": 16,
+        "timestamp": 1734400759.3504353,
+        "dados": {
+            "glicose": 99.0
+        },
+        "hash_anterior": "000641d5490c295cf13d9e1d91b74273d8c4d54cada956eaa26b381ada00d876",
+        "nonce": 55,
+        "hash_atual": "0087292c36bff119295dce316ab1ab14cee65feef13c726cd35c84f9dad57126"
+    },
+    {
+        "index": 17,
+        "timestamp": 1734400815.2312334,
+        "dados": {
+            "glicose": 80.0
+        },
+        "hash_anterior": "0087292c36bff119295dce316ab1ab14cee65feef13c726cd35c84f9dad57126",
+        "nonce": 515,
+        "hash_atual": "001183cb9a5116a0ff0374ce7acb7deb48ae1df305e2bfc93d5ae1eee99c7570"
+    },
+    {
+        "index": 18,
+        "timestamp": 1734401026.5752432,
+        "dados": {
+            "glicose": 90.0
+        },
+        "hash_anterior": "001183cb9a5116a0ff0374ce7acb7deb48ae1df305e2bfc93d5ae1eee99c7570",
+        "nonce": 509,
+        "hash_atual": "00e0593523f9780d4e46d153b705e67024b79eb57603d215954c7e97269e1f5b"
+    },
+    {
+        "index": 19,
+        "timestamp": 1734401244.0640206,
+        "dados": {
+            "glicose": 80.0
+        },
+        "hash_anterior": "00e0593523f9780d4e46d153b705e67024b79eb57603d215954c7e97269e1f5b",
+        "nonce": 245,
+        "hash_atual": "0066f15731598e191899a3dccba47108d0745f41eab650a5b684b6d829f09030"
+    },
+    {
+        "index": 20,
+        "timestamp": 1734401476.1082923,
+        "dados": {
+            "glicose": 70.0
+        },
+        "hash_anterior": "0066f15731598e191899a3dccba47108d0745f41eab650a5b684b6d829f09030",
+        "nonce": 213,
+        "hash_atual": "00c5aa755bb7f0de3b1d8653bde75c88e35c748ccf83e042f7d3f9e0045afd39"
+    },
+    {
+        "index": 21,
+        "timestamp": 1734401731.0831802,
+        "dados": {
+            "glicose": 128.0
+        },
+        "hash_anterior": "00c5aa755bb7f0de3b1d8653bde75c88e35c748ccf83e042f7d3f9e0045afd39",
+        "nonce": 150,
+        "hash_atual": "00d3b325e19935ad52a2c3c3f69a3e6c3e10b109aff40daa319e6c977d998e60"
+    },
+    {
+        "index": 22,
+        "timestamp": 1734401750.9647307,
+        "dados": {
+            "glicose": 150.0
+        },
+        "hash_anterior": "00d3b325e19935ad52a2c3c3f69a3e6c3e10b109aff40daa319e6c977d998e60",
+        "nonce": 19,
+        "hash_atual": "007ead379010935f9fff8dba32d6db126d9bba6bd7798d96fdf519dd21106b96"
     }
 ]
